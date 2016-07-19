@@ -5,11 +5,11 @@ import time
 
 GPIO.setmode(GPIO.BCM)
 
-LED1 = 5	
+LED1 = 11
 GPIO.setup(LED1, GPIO.OUT)
 
 
-for i in range(20):
+for i in range(10):
  print(i)
  GPIO.output(LED1, GPIO.HIGH)
  time.sleep(0.1)
@@ -17,5 +17,3 @@ for i in range(20):
  time.sleep(0.1)
 
 GPIO.cleanup()
-
-print("led1 done")
